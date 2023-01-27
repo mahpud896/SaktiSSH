@@ -111,8 +111,8 @@ rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-
 * • 22, 2253
 
 ### Jangan Lupa Traktir Kopi
-<a href="https://trakteer.id/sulaiman-l/tip" target="_blank"><img id="wse-buttons-preview" src="https://cdn.trakteer.id/images/embed/trbtn-red-6.png" height="40" style="border: 0px; height: 40px;" alt="Trakteer Saya"></a>
-https://trakteer.id/sulaiman-l/tip
+<a href="https://trakteer.id/Namydev/tip" target="_blank"><img id="wse-buttons-preview" src="https://cdn.trakteer.id/images/embed/trbtn-red-6.png" height="40" style="border: 0px; height: 40px;" alt="Trakteer Saya"></a>
+https://trakteer.id/Namydev/tip
 
 ### 5. MENU, INFO ,UPDATE ,FIX
 * untuk menampilkan menu
