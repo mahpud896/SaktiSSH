@@ -1,34 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@mahpud896 
-mahpud896
-/
-SaktiSSH
-Public
-Cannot fork because you own this repository and are not a member of any organizations.
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-SaktiSSH/update/updatemenu.sh
-@mahpud896
-mahpud896 SaktiSSH
-Latest commit 7b46788 last month
- History
- 1 contributor
-100 lines (98 sloc)  3.94 KB
-
 #!/bin/bash
 # ==========================================
 # Color
@@ -129,18 +98,3 @@ sl-download-info
 #install-ss-plugin
 #xray-grpc
 cd
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-SaktiSSH/updatemenu.sh at main · mahpud896/SaktiSSH
