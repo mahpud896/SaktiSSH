@@ -1,3 +1,34 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@mahpud896 
+mahpud896
+/
+SaktiSSH
+Public
+Cannot fork because you own this repository and are not a member of any organizations.
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+SaktiSSH/update/updatemenu.sh
+@mahpud896
+mahpud896 SaktiSSH
+Latest commit 7b46788 last month
+ History
+ 1 contributor
+100 lines (98 sloc)  3.94 KB
+
 #!/bin/bash
 # ==========================================
 # Color
@@ -31,35 +62,35 @@ rm -rf restart
 rm -rf slhost
 rm -rf install-sldns
 rm -rf addssh
-wget -O install-sldns "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/SLDNS/install-sldns"
-wget -O restart "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/ssh/restart.sh"
-wget -O addssh "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/ssh/addssh.sh"
-wget -O menu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/menu.sh"
-wget -O ipsaya "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/ipsaya.sh"
-wget -O sl-fix "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/sslh-fix/sl-fix"
-wget -O sshovpnmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/sshovpn.sh"
-wget -O l2tpmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/l2tpmenu.sh"
-wget -O pptpmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/pptpmenu.sh"
-wget -O sstpmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/sstpmenu.sh"
-wget -O wgmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/wgmenu.sh"
-wget -O ssmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/ssmenu.sh"
-wget -O ssrmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/ssrmenu.sh"
-wget -O vmessmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/vmessmenu.sh"
-wget -O vlessmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/vlessmenu.sh"
-wget -O xray-grpc "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/grpc/xray-grpc.sh"
-wget -O grpcmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/grpcmenu.sh"
-wget -O grpcupdate "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/grpcupdate.sh"
-wget -O trmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/trmenu.sh"
-wget -O trgomenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/trgomenu.sh"
-wget -O setmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/setmenu.sh"
-wget -O slowdnsmenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/slowdnsmenu.sh"
-wget -O running "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/running.sh"
-wget -O updatemenu "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/updatemenu.sh"
-wget -O copyrepo "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/salin/copyrepo.sh"
-wget -O slhost "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/ssh/slhost.sh"
-wget -O sl-download-info "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/contohinfo/sl-download-info.sh"
-wget -O menuinfo "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/update/menuinfo.sh"
-wget -O install-ss-plugin "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/shadowsocks-plugin/install-ss-plugin.sh"
+wget -O install-sldns "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/SLDNS/install-sldns"
+wget -O restart "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssh/restart.sh"
+wget -O addssh "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssh/addssh.sh"
+wget -O menu "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/update/menu.sh"
+wget -O ipsaya "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/update/ipsaya.sh"
+wget -O sl-fix "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/sslh-fix/sl-fix"
+wget -O sshovpnmenu "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/update/sshovpn.sh"
+wget -O l2tpmenu "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/update/l2tpmenu.sh"
+wget -O pptpmenu "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/update/pptpmenu.sh"
+wget -O sstpmenu "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/update/sstpmenu.sh"
+wget -O wgmenu "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/update/wgmenu.sh"
+wget -O ssmenu "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/update/ssmenu.sh"
+wget -O ssrmenu "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/update/ssrmenu.sh"
+wget -O vmessmenu "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/update/vmessmenu.sh"
+wget -O vlessmenu "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/update/vlessmenu.sh"
+wget -O xray-grpc "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/grpc/xray-grpc.sh"
+wget -O grpcmenu "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/update/grpcmenu.sh"
+wget -O grpcupdate "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/update/grpcupdate.sh"
+wget -O trmenu "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/update/trmenu.sh"
+wget -O trgomenu "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/update/trgomenu.sh"
+wget -O setmenu "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/update/setmenu.sh"
+wget -O slowdnsmenu "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/update/slowdnsmenu.sh"
+wget -O running "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/update/running.sh"
+wget -O updatemenu "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/update/updatemenu.sh"
+wget -O copyrepo "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/salin/copyrepo.sh"
+wget -O slhost "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssh/slhost.sh"
+wget -O sl-download-info "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/contohinfo/sl-download-info.sh"
+wget -O menuinfo "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/update/menuinfo.sh"
+wget -O install-ss-plugin "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/shadowsocks-plugin/install-ss-plugin.sh"
 
 chmod +x install-ss-plugin
 chmod +x xray-grpc
@@ -98,3 +129,18 @@ sl-download-info
 #install-ss-plugin
 #xray-grpc
 cd
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+SaktiSSH/updatemenu.sh at main · mahpud896/SaktiSSH
