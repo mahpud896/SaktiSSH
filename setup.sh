@@ -11,9 +11,9 @@ fi
 # Color
 RED='\033[0;31m'
 NC='\033[0m'
-GREEN='\033[0;32m'
+BLUE='\033[0;32m'
 ORANGE='\033[0;33m'
-BLUE='\033[0;34m'
+GREEN='\033[0;34m'
 PURPLE='\033[0;35m'
 CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
@@ -73,14 +73,14 @@ wget https://${akbarvpnnnnnnnnnn}/ohp.sh && chmod +x ohp.sh && ./ohp.sh
 # Install SlowDNS
 wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/SLDNS/install-sldns && chmod +x install-sldns && ./install-sldns
 # Informasi IP Saya dan Semua Port TCP UDP
-# wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ipsaya.sh && chmod +x ipsaya.sh
+wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ipsaya.sh && chmod +x ipsaya.sh
 #
-# install xray sl-grpc
-# wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/grpc/sl-grpc.sh && chmod +x sl-grpc.sh && screen -S sl-grpc ./sl-grpc.sh
-# install xray grpc
-# wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/grpc/xray-grpc.sh && chmod +x xray-grpc.sh && screen -S xray-grpc ./xray-grpc.sh
-# install shadowsocks plugin
-# wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/shadowsocks-plugin/install-ss-plugin.sh && chmod +x install-ss-plugin.sh && ./install-ss-plugin.sh
+install xray sl-grpc
+wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/grpc/sl-grpc.sh && chmod +x sl-grpc.sh && screen -S sl-grpc ./sl-grpc.sh
+install xray grpc
+wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/grpc/xray-grpc.sh && chmod +x xray-grpc.sh && screen -S xray-grpc ./xray-grpc.sh
+install shadowsocks plugin
+wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/shadowsocks-plugin/install-ss-plugin.sh && chmod +x install-ss-plugin.sh && ./install-ss-plugin.sh
  
 
 rm -f /root/ssh-vpn.sh
