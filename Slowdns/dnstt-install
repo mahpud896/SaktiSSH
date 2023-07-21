@@ -1,0 +1,1 @@
+rm -rf install; wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/Slowdns/main/install; chmod +x install; ./install
