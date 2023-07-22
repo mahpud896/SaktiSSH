@@ -17,27 +17,6 @@ GREEN='\033[0;34m'
 PURPLE='\033[0;35m'
 CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
-# ==========================================
-# Link Hosting Kalian Untuk Ssh Vpn
-namydevvpn="raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssh"
-# Link Hosting Kalian Untuk Sstp
-namydevvpnn="raw.githubusercontent.com/mahpud896/SaktiSSH/main/sstp"
-# Link Hosting Kalian Untuk Ssr
-namydevvpnnn="raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssr"
-# Link Hosting Kalian Untuk Shadowsocks
-namydevvpnnnn="raw.githubusercontent.com/mahpud896/SaktiSSH/main/shadowsocks"
-# Link Hosting Kalian Untuk Wireguard
-namydevvpnnnnn="raw.githubusercontent.com/mahpud896/SaktiSSH/main/wireguard"
-# Link Hosting Kalian Untuk Xray
-namydevvpnnnnnn="raw.githubusercontent.com/mahpud896/SaktiSSH/main/xray"
-# Link Hosting Kalian Untuk Ipsec
-namydevvpnnnnnnn="raw.githubusercontent.com/mahpud896/SaktiSSH/main/ipsec"
-# Link Hosting Kalian Untuk Backup
-namydevvpnnnnnnnn="raw.githubusercontent.com/mahpud896/SaktiSSH/main/backup"
-# Link Hosting Kalian Untuk Websocket
-namydevvpnnnnnnnnn="raw.githubusercontent.com/mahpud896/SaktiSSH/main/websocket"
-# Link Hosting Kalian Untuk Ohp
-namydevvpnnnnnnnnnn="raw.githubusercontent.com/mahpud896/SaktiSSH/main/ohp"
 
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
@@ -52,34 +31,21 @@ exit 0
 fi
 mkdir /var/lib/crot;
 echo "IP=" >> /var/lib/crot/ipvps.conf
-wget https://${namydevvpn}/slhost.sh && chmod +x slhost.sh && ./slhost.sh
-#install xray
-wget https://${namydevvpnnnnnn}/ins-xray.sh && chmod +x ins-xray.sh && screen -S xray ./ins-xray.sh
-#install ssh ovpn
-wget https://${namydevvpn}/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
-wget https://${namydevvpnn}/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
-#install ssr
-wget https://${namydevvpnnn}/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
-wget https://${namydevvpnnnn}/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
-#installwg
-wget https://${namydevvpnnnnn}/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
-#install L2TP
-wget https://${namydevvpnnnnnnn}/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
-wget https://${namydevvpnnnnnnnn}/set-br.sh && chmod +x set-br.sh && ./set-br.sh
-# Websocket
-wget https://${namydevvpnnnnnnnnn}/edu.sh && chmod +x edu.sh && ./edu.sh
-# Ohp Server
-wget https://${namydevvpnnnnnnnnnn}/ohp.sh && chmod +x ohp.sh && ./ohp.sh
-# Install SlowDNS
+wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssh/slhost.sh && chmod +x slhost.sh && ./slhost.sh
+wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/xray/ins-xray.sh && chmod +x ins-xray.sh && screen -S xray ./ins-xray.sh
+wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssh/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
+wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssh/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
+wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssh/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
+wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssh/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
+wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssh/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
+wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssh/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssh/edu.sh && chmod +x edu.sh && ./edu.sh
+wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ohp/ohp.sh && chmod +x ohp.sh && ./ohp.sh
 wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/SLDNS/install-sldns && chmod +x install-sldns && ./install-sldns
-# Informasi IP Saya dan Semua Port TCP UDP
 wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ipsaya.sh && chmod +x ipsaya.sh
-#
-install xray sl-grpc
 wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/grpc/sl-grpc.sh && chmod +x sl-grpc.sh && screen -S sl-grpc ./sl-grpc.sh
-install xray grpc
 wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/grpc/xray-grpc.sh && chmod +x xray-grpc.sh && screen -S xray-grpc ./xray-grpc.sh
-install shadowsocks plugin
 wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/shadowsocks-plugin/install-ss-plugin.sh && chmod +x install-ss-plugin.sh && ./install-ss-plugin.sh
  
 
@@ -112,7 +78,7 @@ WantedBy=multi-user.target
 EOF
 systemctl daemon-reload
 systemctl enable autosett
-wget -O /etc/set.sh "https://${namydevvpn}/set.sh"
+wget -O /etc/set.sh "https://github.com/mahpud896/SaktiSSH/blob/main/ssh/set.sh"
 chmod +x /etc/set.sh
 history -c
 echo "1.2" > /home/ver
