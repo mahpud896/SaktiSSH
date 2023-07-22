@@ -40,7 +40,7 @@ wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssh/sodosok.sh &&
 wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssh/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssh/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssh/set-br.sh && chmod +x set-br.sh && ./set-br.sh
-wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssh/edu.sh && chmod +x edu.sh && ./edu.sh
+wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/websocket/edu.sh && chmod +x edu.sh && ./edu.sh
 wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ohp/ohp.sh && chmod +x ohp.sh && ./ohp.sh
 wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/SLDNS/install-sldns && chmod +x install-sldns && ./install-sldns
 wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ipsaya.sh && chmod +x ipsaya.sh
