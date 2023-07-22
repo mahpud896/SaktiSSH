@@ -78,7 +78,7 @@ WantedBy=multi-user.target
 EOF
 systemctl daemon-reload
 systemctl enable autosett
-wget -O /etc/set.sh "https://github.com/mahpud896/SaktiSSH/blob/main/ssh/set.sh"
+wget -O /etc/set.sh "https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssh/set.sh"
 chmod +x /etc/set.sh
 history -c
 echo "1.2" > /home/ver
