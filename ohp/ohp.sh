@@ -1,6 +1,6 @@
 #!/bin/bash
-# Open Http Puncher
-# SL
+# Ohp Script
+# My Telegram : https://t.me/Akbar218
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -15,17 +15,9 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl ipinfo.io/ip | grep $MYIP )
-if [ $MYIP = $MYIP ]; then
-echo -e "${NC}${GREEN}Permission Accepted...${NC}"
-else
-echo -e "${NC}${RED}Permission Denied!${NC}";
-echo -e "${NC}${LIGHT}Fuck You!!"
-exit 0
-fi
-
+clear
 # Download File Ohp
-wget https://github.com/lfasmpao/open-http-puncher/releases/download/0.1/ohpserver-linux32.zip
+wget https://github.com/givpn/open-http-puncher/raw/main/ohpserver-linux32.zip
 unzip ohpserver-linux32.zip
 chmod +x ohpserver
 cp ohpserver /usr/local/bin/ohpserver
@@ -36,7 +28,7 @@ cp ohpserver /usr/local/bin/ohpserver
 cat > /etc/systemd/system/ssh-ohp.service << END
 [Unit]
 Description=SSH OHP Redirection Service
-Documentation=nekopoi.care
+Documentation=https://t.me/Akbar218
 After=network.target nss-lookup.target
 
 [Service]
@@ -57,7 +49,7 @@ END
 cat > /etc/systemd/system/dropbear-ohp.service << END
 [Unit]]
 Description=Dropbear OHP Redirection Service
-Documentation=https://nekopoi.care
+Documentation=https://t.me/Akbar218
 After=network.target nss-lookup.target
 
 [Service]
@@ -78,7 +70,7 @@ END
 cat > /etc/systemd/system/openvpn-ohp.service << END
 [Unit]]
 Description=OpenVPN OHP Redirection Service
-Documentation=nekopoi.care
+Documentation=https://t.me/Akbar218
 After=network.target nss-lookup.target
 
 [Service]
