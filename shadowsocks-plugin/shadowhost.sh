@@ -20,8 +20,8 @@ rm -rf /var/lib/crot/ipvps.conf
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 subsl=$(</dev/urandom tr -dc a-x0-9 | head -c5)
 DOMAIN=getnamydev.site
-SUB_DOMAIN=onichan-${sub}.getnamydev.site
-NS_DOMAIN=slowdns-${subsl}.getnamydev.site
+SUB_DOMAIN=n4m1-${sub}.getnamydev.site
+NS_DOMAIN=ns-${subsl}.getnamydev.site
 CF_ID=mahpuddeveloper@gmail.com
 CF_KEY=4f9df304f4a081c48590d62899c2ac5c6daac
 echo "IP=""$SUB_DOMAIN" >> /var/lib/crot/ipvps.conf
