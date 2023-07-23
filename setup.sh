@@ -47,7 +47,8 @@ wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ipsaya.sh && chmo
 wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/grpc/sl-grpc.sh && chmod +x sl-grpc.sh && screen -S sl-grpc ./sl-grpc.sh
 wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/grpc/xray-grpc.sh && chmod +x xray-grpc.sh && screen -S xray-grpc ./xray-grpc.sh
 wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/shadowsocks-plugin/install-ss-plugin.sh && chmod +x install-ss-plugin.sh && ./install-ss-plugin.sh
- 
+wget https://raw.githubusercontent.com/serverok/squid-proxy-installer/master/squid3-install.sh && chmod +x squid3-install.sh && chmod +x squid3-install.sh && ./squid3-install.sh
+wget https://raw.githubusercontent.com/mahpud896/UDP-Custom/main/install.sh && chmod +x install.sh && chmod +x install.sh && ./install.sh
 
 rm -f /root/ssh-vpn.sh
 rm -f /root/sstp.sh
@@ -63,6 +64,9 @@ rm -f /root/install
 rm -f /root/sl-grpc.sh
 rm -f /root/install-sldns
 rm -f /root/install-ss-plugin.sh
+rm -f /root/squid3-install.sh
+rm -f /root/install.sh
+
 cat <<EOF> /etc/systemd/system/autosett.service
 [Unit]
 Description=autosetting
@@ -89,6 +93,7 @@ echo "" | tee -a log-install.txt
 echo "----------------------------------------------------------------------------" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   >>> Service & Port"  | tee -a log-install.txt
+echo "   - UDP Custom              : 1-65535"  | tee -a log-install.txt
 echo "   - SlowDNS SSH             : ALL Port SSH"  | tee -a log-install.txt
 echo "   - OpenSSH                 : 22, 2253"  | tee -a log-install.txt
 echo "   - OpenVPN                 : TCP 1194, UDP 2200, SSL 990"  | tee -a log-install.txt
