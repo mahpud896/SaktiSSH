@@ -36,7 +36,7 @@ wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/xray/ins-xray.sh 
 wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssh/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssr/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
-wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssh/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
+wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/shadowsocks/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
 wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssh/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ipsec/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 wget https://raw.githubusercontent.com/mahpud896/SaktiSSH/main/ssh/set-br.sh && chmod +x set-br.sh && ./set-br.sh
