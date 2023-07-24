@@ -1,12 +1,12 @@
 #!/bin/bash
 # Link Hosting Kalian
-akbarvpn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/ssh"
+namydev="raw.githubusercontent.com/mantap896/SaktiSSH/main/ssh"
 # install webserver
 apt -y install nginx php php-fpm php-cli php-mysql libxml-parser-perl
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-curl https://${akbarvpn}/nginx.conf > /etc/nginx/nginx.conf
-curl https://${akbarvpn}/vps.conf > /etc/nginx/conf.d/vps.conf
+curl https://${namydev}/nginx.conf > /etc/nginx/nginx.conf
+curl https://${namydev}/vps.conf > /etc/nginx/conf.d/vps.conf
 sed -i 's/listen = \/var\/run\/php-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php/fpm/pool.d/www.conf
 useradd -m vps;
 mkdir -p /home/vps/public_html
@@ -14,7 +14,7 @@ echo "<?php phpinfo() ?>" > /home/vps/public_html/info.php
 chown -R www-data:www-data /home/vps/public_html
 chmod -R g+rw /home/vps/public_html
 cd /home/vps/public_html
-wget -O /home/vps/public_html/index.html "https://${akbarvpn}/index.html1"
+wget -O /home/vps/public_html/index.html "https://${namydev}/index.html1"
 /etc/init.d/nginx restart
 ##
 ## Hapus
