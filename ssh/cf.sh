@@ -24,12 +24,12 @@ exit 0
 fi
 clear
 apt install jq curl -y
-###DOM#AIN=installer.my.id
-DOMAIN=mahpud.my.id
+###DOM#AIN=installer.ktyounk.site
+DOMAIN=ktyounk.site
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c6)
-SUB_DOMAIN=${sub}.mahpud.my.id
-CF_ID=namydev@gmail.com
-CF_KEY=87300cc5cb23db4e08e1b99be88076a9c0590
+SUB_DOMAIN=${sub}.ktyounk.site
+CF_ID=mahpuddeveloper@gmail.com
+CF_KEY=4f9df304f4a081c48590d62899c2ac5c6daac
 ##SUB_DOMAIN=${sub}.installer.my.id
 ##CF_ID=senowahyu62@gmail.com
 ##CF_KEY=84570683099becbeb0f04d8086ce6f309c56c
