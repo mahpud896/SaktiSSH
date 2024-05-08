@@ -73,9 +73,9 @@ cat>/etc/xray/vmess-$user-nontls.json<<EOF
       "id": "${uuid}",
       "aid": "0",
       "net": "ws",
-      "path": "/vmess/",
+      "path": "api/v1/token/hetoken/vmess-ws",
       "type": "none",
-      "host": "",
+      "host": "myim3-he.ioh.co.id",
       "tls": "none"
 }
 EOF
